@@ -11,11 +11,11 @@ A solution for rental shops to keep track of checked out equipment through barco
 
 `pipenv shell`
 
-3. Run `client/app.py` and/or `server/app.py`
+3. Run `client/__init__.py` and/or `server/__init__.py`
 
 # Client
 ```
-usage: app.py [-h] [--debug] [--collect] [--quiet]
+usage: __init__.py [-h] [--debug] [--collect] [--quiet]
 
 Start the Inventory Manager client
 

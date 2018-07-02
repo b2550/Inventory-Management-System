@@ -18,6 +18,9 @@ appdirs = "*"
 formlayout = "*"
 pync = "*"
 pytest = "*"
+codecov = "*"
+pytest-cov = "*"
+"py2app" = "*"
 
 [dev-packages]
 

@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.6"
+
+install:
+  - pipenv install --system --deploy
+
+script:
+  # - pytest --cov=./
+  - python client/setup.py py2app
