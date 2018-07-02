@@ -9,7 +9,7 @@ from setuptools import setup
 
 APP = ['__init__.py']
 DATA_FILES = ['--iconfile', '--resources', 'icon.png', '--plist']
-OPTIONS = {'iconfile': '/Users/b2550/Desktop/TIMARA-Inventory-Management-System/client/icon.icns',
+OPTIONS = {'iconfile': 'icon.icns',
  'plist': {'CFBundleDisplayName': 'Inventory Manager',
            'CFBundleIdentifier': 'net.squizit.inventorymanager',
            'CFBundleName': 'Inventory Manager',
