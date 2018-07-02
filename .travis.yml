@@ -1,11 +1,20 @@
 language: python
+
 python:
-  - "3.6"
+  - "3.4"
+
+matrix:
+    include:
+        - os: osx
+          language: generic
+        - os: linux
+          language: python
+
+before_install: ./scripts/before-install.sh
 
 install:
-  - pip install pipenv
-  - pipenv install --system --deploy
+  - pip3 install pipenv
 
 script:
-  # - pytest --cov=./
-  - python client/setup.py py2app
+  - ./scripts/build-client.sh
+  - ./scripts/build-server.sh

@@ -8,7 +8,7 @@ Usage:
 from setuptools import setup
 
 APP = ['__init__.py']
-DATA_FILES = ['--iconfile', '--resources', 'icon.png', '--plist']
+DATA_FILES = ['icon.png']
 OPTIONS = {'iconfile': 'icon.icns',
  'plist': {'CFBundleDisplayName': 'Inventory Manager',
            'CFBundleIdentifier': 'net.squizit.inventorymanager',

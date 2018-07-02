@@ -13,16 +13,11 @@ flask-testing = "*"
 flask-admin = "*"
 flask-dance = "*"
 flask-assets = "*"
-appdirs = "*"
-"pyqt5" = "*"
-formlayout = "*"
-pync = "*"
+
+[dev-packages]
 pytest = "*"
 codecov = "*"
 pytest-cov = "*"
-"py2app" = "*"
-
-[dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.4"
