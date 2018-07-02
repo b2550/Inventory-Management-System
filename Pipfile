@@ -16,6 +16,8 @@ flask-assets = "*"
 appdirs = "*"
 "pyqt5" = "*"
 formlayout = "*"
+pync = "*"
+pytest = "*"
 
 [dev-packages]
 

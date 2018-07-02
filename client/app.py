@@ -11,6 +11,7 @@ import sys
 from formlayout import fedit
 import configparser
 import argparse
+import pync
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
@@ -98,7 +99,7 @@ def exitApp():
     logger.info('Inventory Manager Stopping')
     sys.exit()
 
-def initTrayIcon():
+def initApp():
     """
     Create Qt5 tray icon
     """
@@ -127,6 +128,9 @@ def initTrayIcon():
     tray.setContextMenu(menu)
 
     logger.info('Inventory Manager Started')
+
+    #TODO: Here is when to attempt to connect to server
+    pync.notify('Inventory Manager Started', title='Inventory Manager')
 
     app.exec_()
 
@@ -168,4 +172,4 @@ if __name__ == '__main__':
     initLocalConfig()
 
     # Start the application
-    initTrayIcon()
+    initApp()
