@@ -1,5 +1,5 @@
 # Inventory Manager
-A solution for rental shops to keep track of checked out equipment through barcodes for macOS (other platform support coming in the future)
+A solution for rental shops to keep track of checked out equipment through barcodes (scanner client is currently macOS-only)
 
 # How to run (development)
 
