@@ -1,3 +1,5 @@
 *.ini
 *log
 *.log.*
+/build
+/dist
