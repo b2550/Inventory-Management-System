@@ -1,6 +1,0 @@
-*.ini
-*log
-*.log.*
-/build
-/dist
-/.eggs
