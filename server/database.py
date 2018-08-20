@@ -4,8 +4,8 @@ db = SQLAlchemy()
 
 
 class Settings(db.Model):
-    key = db.Column(db.String, primary_key=True)
-    value = db.Column(db.String)
+    barcodePrefix = db.Column(db.String)
+    allowOrders = db.Column(db.Boolean)
 
 
 class User(db.Model):
@@ -40,6 +40,7 @@ class Item(db.Model):
     adminNotes = db.Column(db.String)  # Notes that are only visible to the admin
     imgURL = db.Column(db.String)
     order_id = db.Column(db.Integer, db.ForeignKey('order.id'))  # Order that the item is checked out to
+    reservation_id = db.Column(db.Integer, db.ForeignKey('reservation.id'))
     type_id = db.Column(db.Integer, db.ForeignKey('type.id'))
 
 
