@@ -1,5 +1,5 @@
 import pytest
 
 @pytest.fixture
-def client():
+def test():
     pass

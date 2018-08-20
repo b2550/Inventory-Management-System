@@ -1,0 +1,24 @@
+[[source]]
+url = 'https://pypi.org/simple'
+verify_ssl = true
+name = 'pypi'
+
+[requires]
+python_version = '3.7.0'
+
+[packages]
+flask = '*'
+pybarcode = '*'
+flask-mail = '*'
+flask-migrate = '*'
+flask-sqlalchemy = '*'
+flask-testing = '*'
+flask-admin = '*'
+flask-dance = '*'
+flask-assets = '*'
+python-dotenv = '*'
+
+[dev-packages]
+pytest = '*'
+codecov = '*'
+pytest-cov = '*'
